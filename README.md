@@ -31,7 +31,7 @@ import * as firebase from 'firebase';
 }
 ```
 
-## For production below example should be followed with extra rules as defined by Firebase docs (https://firebase.google.com/docs/database/security/)[url]
+## For production below example should be followed with extra rules as defined by Firebase docs (https://firebase.google.com/docs/database/security/)
 
 ```
 ".read": "auth != null",
