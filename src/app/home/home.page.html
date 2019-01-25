@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      All Leads
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/create"><ion-icon name="add-circle"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let lead of leads">
+      <ion-item detail lines="full" routerLink="/detail/{{lead.key}}">
+        {{lead.lead_title}}
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="primary" (click)="edit(lead.key)">EDIT LEAD</ion-item-option>
+        <ion-item-option color="danger" (click)="delete(lead.key)">DELETE LEAD</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

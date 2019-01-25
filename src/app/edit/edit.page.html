@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Lead</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+   <form [formGroup]="leadForm">
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" formControlName="lead_title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lead Comments</ion-label>
+      <ion-input type="text" formControlName="lead_comment"></ion-input>
+    </ion-item>
+    <ion-button shape="round" color="primary" expand="block" [disabled]="!leadForm.valid" (click)="updateLead()">Update</ion-button>
+  </form>
+</ion-content>
