@@ -19,3 +19,14 @@ const config = {
 ```
 import * as firebase from 'firebase';
 ```
+
+## Set Firebase console rules only for this demo local testing (not recommended for production)
+```
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+      
+  }   
+}
+```
