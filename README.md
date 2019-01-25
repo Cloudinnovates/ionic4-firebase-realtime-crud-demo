@@ -2,6 +2,7 @@
 Ionic 4 Firebase Realtime CRUD demo with email authentication login and social login
 
 # Get your google firebase credentials, from firebase console (web setup)
+```
 const config = {
     apiKey: "",
     authDomain: "",
@@ -9,3 +10,4 @@ const config = {
     projectId: "",
     storageBucket: ""
 };
+```
