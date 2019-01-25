@@ -11,7 +11,7 @@ const config = {
     storageBucket: ""
 };
 ```
-## To Do
+## To Do (Work in Progress)
 - Login
 - Social Login
 
